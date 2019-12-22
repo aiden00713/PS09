@@ -18,12 +18,11 @@ int main(void)
 int afunc(int a[])
 {
 	int i;
-	int top = a[0]; //把a[0]存起來 
+	int top = a[0];
 	for (i=0;a[i]!=0;i++)
 	{
 		a[i-1]=a[i];
 	}
 	a[i-1]=0;
-	return top;  //回傳
+	return top;
 }
-
